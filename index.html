@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toihanirofu</title>
+  <style>
+body {
+  margin: 0;
+  background-color: #000;
+  color: #ccc;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 18vh; /* ← デスクトップ用の余白 */
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 30%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+/* 👇 スマホだけ余白をさらに小さくして上寄せに */
+@media (max-width: 768px) {
+  body {
+    padding-top: 4vh; /* スマホ用に、上にグッと寄せる */
+  }
+
+  img {
+    width: 80%;
+    max-width: none;
+  }
+}
+    nav {
+      display: flex;
+      flex-direction: row; /* ← 横並びに変更 */
+      gap: 28px;            /* ← 間隔を広めに */
+      font-size: 14px;
+      text-transform: lowercase;
+    }
+    a {
+      color: #888;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <img src="images/kireini.jpg" alt="kireini.jpg">
+  <nav>
+    <a href="profile.html">profile</a>
+    <a href="music.html">music</a>
+    <a href="log.html">log</a>
+    <a href="shop.html">shop</a>
+    <a href="x.html">&times;</a>
+    <a href="gallery.html">.</a>
+    <a href="black.html">–</a>
+  </nav>
+</body>
+</html>
